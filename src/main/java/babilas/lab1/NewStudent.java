@@ -6,11 +6,11 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 public class NewStudent {
     final String name;
     final String number;
-    final String sekcja;
+    final String studentGroup;
     @JsonCreator
-    public NewStudent(@JsonProperty("name") String name,@JsonProperty("number") String number, @JsonProperty("sekcja") String sekcja) {
+    public NewStudent(@JsonProperty("name") String name,@JsonProperty("number") String number, @JsonProperty("studentGroup") String studentGroup) {
         this.name = name;
         this.number = number;
-        this.sekcja = sekcja;
+        this.studentGroup = studentGroup;
     }
 }
